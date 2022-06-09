@@ -23,9 +23,15 @@ CREATE TABLE tb_product (
     created_at DATETIME NOT NULL
 );
 
+-- DESC tb_product para ver a tabela criada.
+
 --Inserir dados na tabela tb_category
 INSERT INTO tb_category (name, description)
 VALUES
 ('Informática', 'Produtos de Informática e acessórios para computadores'),
 ('Escritório', 'Canetas, Cadernos, folhas, etc'),
 ('Eletrônicos', 'TVs, Som portátil, Caixas de som, etc');
+
+-- INSERT INTO tb_product (name, description, photo, valor, categoria_id, quantity, created_at)
+-- VALUES
+-- ('mouse', 'mouse com fio', 'https://image.shutterstock.com/image-photo/white-wireless-mouse-on-yellow-600w-1503021224.jpg', 19.99, 1, 999,);
