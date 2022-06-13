@@ -18,20 +18,10 @@ class CategoryController extends AbstractController {
         $result->execute();
 
         //\PDO::FETCH_ASSOC irá trazer só os dados de forma associativa 
-        $cat = $result->fetch(\PDO::FETCH_ASSOC);
+
         
-        echo $cat['id'];
-        echo $cat['name'];
-        echo $cat['description'];
+        parent::render('category/list', $result);
     }
 
-    public function addAction(): void
-    {
-        parent::render('category/add');
-    }
 
-    public function editAction(): void
-    {
-        parent::render('category/edit');
-    }
 }
