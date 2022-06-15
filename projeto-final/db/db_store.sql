@@ -17,8 +17,8 @@ CREATE TABLE tb_product (
     name VARCHAR(30) NOT NULL,
     description VARCHAR(255) NOT NULL,
     photo VARCHAR(255) NOT NULL,
-    valor FLOAT(5,2) NOT NULL,
-    categoria_id int(11) NOT NULL,
+    value FLOAT(5,2) NOT NULL,
+    category_id int(11) NOT NULL,
     quantity INT(5) NOT NULL,
     created_at DATETIME NOT NULL
 );
@@ -32,6 +32,10 @@ VALUES
 ('Escritório', 'Canetas, Cadernos, folhas, etc'),
 ('Eletrônicos', 'TVs, Som portátil, Caixas de som, etc');
 
--- INSERT INTO tb_product (name, description, photo, valor, categoria_id, quantity, created_at)
--- VALUES
--- ('mouse', 'mouse com fio', 'https://image.shutterstock.com/image-photo/white-wireless-mouse-on-yellow-600w-1503021224.jpg', 19.99, 1, 999,);
+--Inserir produtos
+INSERT INTO tb_product (name, description, photo, value, category_id, quantity, created_at)
+VALUES
+('Teclado 2', 'Teclado Bla Bla', 'https://m.media-amazon.com/images/I/71xVYmz-y9S._AC_SY450_.jpg', 199.89, 1, 50, '2022-05-10 09:30:34'),
+('Teclado 3', 'Teclado Bla Bla', 'https://m.media-amazon.com/images/I/71xVYmz-y9S._AC_SY450_.jpg', 199.89, 1, 50, '2022-05-10 09:30:34');
+
+
