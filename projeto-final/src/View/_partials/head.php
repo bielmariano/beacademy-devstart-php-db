@@ -13,8 +13,8 @@
 
 <nav class="mt-3">
 <a href="/" class="btn btn-outline-dark">Inicio</a>
-<a href="categorias" class="btn btn-outline-dark">Categorias</a>
-<a href="produtos" class="btn btn-outline-dark">Produtos</a>
+<a href="/categorias" class="btn btn-outline-dark">Categorias</a>
+<a href="/produtos" class="btn btn-outline-dark">Produtos</a>
 </nav>
 
 <hr>
